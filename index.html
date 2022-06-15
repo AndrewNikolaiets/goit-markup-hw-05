@@ -18,6 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -30,7 +35,7 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a href="./index.html" class="header-link link">Студия</a>
+              <a href="./index.html" class="header-link current link">Студия</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="header-link link">Портфолио</a>
@@ -52,13 +57,13 @@
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="header-tel link"
-              >
+            <a href="tel:+380961111111" class="header-tel link">
               <span class="header-contact-tel">
                 <svg class=" " width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-tel"></use>
                 </svg>
-                +38 096 111 11 11</a
+              </span>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -69,7 +74,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- SPECIFICATION -->
@@ -139,6 +146,9 @@
                 width="370"
                 height="295"
               />
+              <div class="progekt-text-box">
+                <p class="progekt-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="progekt-item">
               <img
@@ -147,6 +157,9 @@
                 width="370"
                 height="295"
               />
+              <div class="progekt-text-box">
+                <p class="progekt-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="progekt-item">
               <img
@@ -155,6 +168,9 @@
                 width="370"
                 height="295"
               />
+              <div class="progekt-text-box">
+                <p class="progekt-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -464,5 +480,21 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-cloce-btn" data-modal-close>
+          <span class="">
+            <svg class="" width="" height="">
+              <use href="./images/symbol-defs.svg#icon-close-buttom"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
