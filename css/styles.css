@@ -110,6 +110,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--btn-color);
   position: relative;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -137,6 +139,7 @@ body {
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover,
@@ -154,6 +157,7 @@ body {
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-mail,
@@ -216,6 +220,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
+  border: none;
   cursor: pointer;
   border-radius: 4px;
   margin-top: 30px;
@@ -406,6 +411,8 @@ body {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -451,6 +458,8 @@ body {
   justify-content: center;
   color: #afb1b8;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-soc-icon {
@@ -497,6 +506,8 @@ body {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters-btn:hover,
@@ -585,9 +596,10 @@ body {
 }
 .footer-cont {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   /* outline: 2px solid red; */
 }
+
 .footer-contacts {
   display: flex;
   flex-direction: column;
@@ -620,7 +632,9 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-mail:hover,
 .footer-mail:focus {
   color: var(--accent-color);
@@ -631,6 +645,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-tel:hover,
 .footer-tel:focus {
@@ -642,6 +657,7 @@ body {
   padding-left: 70px;
   width: 206px;
   height: 80px;
+  padding-bottom: 100px;
 }
 .footer-soc-text {
   font-weight: 700;
@@ -670,6 +686,8 @@ body {
   align-items: center;
   justify-content: center;
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
@@ -682,11 +700,14 @@ body {
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
-  transform: opacity 250ms, visibility 250ms;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(0) scale(0);
 }
+
 .modal {
   width: 528px;
   min-height: 581px;
@@ -700,6 +721,7 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms;
 }
+
 .modal-cloce-btn {
   width: 30px;
   height: 30px;
@@ -711,6 +733,7 @@ body {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
