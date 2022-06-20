@@ -297,8 +297,9 @@ body {
   position: relative;
 }
 .progekt-text-box {
-  position: relative;
-  top: -76px;
+  position: absolute;
+  top: 225px;
+  width: 370px;
 }
 
 .progekt-text {
